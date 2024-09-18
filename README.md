@@ -30,8 +30,18 @@ This Google Apps Script automatically indexes new emails from your Gmail inbox, 
 5. **Run the Script**:
    - Enter the Google Sheet ID and Google Drive folder ID when prompted.
 
+## Configuring a Trigger
+To automate the script, set up a time-driven trigger:
+
+1. In the Apps Script editor, click on the clock icon (Triggers).
+2. Click on **"+ Add Trigger"**.
+3. Select `indexNewEmails` from the function dropdown.
+4. For "Select event source," choose **Time-driven**.
+5. Choose the frequency for the trigger (e.g., every hour).
+6. Click **Save**.
+
 ## Usage
-- Run the script from the Apps Script editor or set up a time-driven trigger for automatic execution.
+- Run the script from the Apps Script editor or allow the trigger to execute it automatically.
 - The script will log new emails since the last indexing, along with their details and any attachments.
 
 ## Notes
